@@ -1,188 +1,141 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Domine:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Domine|Josefin+Sans:600,700&display=swap&subset=latin-ext');
 
-@import '_variables.scss';
+@import './_colors.scss';
 
-//font-family: 'Josefin Sans', sans-serif;
-//font-family: 'Domine',serif;
-
-
-
-
-//---SET BASIC THINGS ON START---
 
 * {
   margin: 0;
   padding: 0;
-  line-height: 120%;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
   box-sizing: border-box;
+  line-height: 120%;
   text-decoration: none;
   color: currentColor;
-  list-style: none;
-  transition: .1s ease-in-out;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 html,
 body {
+  font-family: Josefin Sans;
+  font-weight: 600;
   scroll-behavior: smooth;
-  font-size: 16px;
-  background-color: $white;
   width: 100%;
   min-height: 100vh;
-  color: $dark;
-  overflow-x: hidden;
+  font-size: 16px;
+  color: $dark-less;
+  //overflow-x: hidden;
 }
 
-.width-max {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
+body {
+  background-color: $white;
 }
 
-
-
-
-
-
-
-
-
-
-//---H1, H2, H3...---
-
-h2 {
-  font-size: 5.25rem;
-  text-transform: uppercase;
-  transition: all .2s ease-in-out;
-  text-shadow: 0 0 0 transparent;
-  //transform: translateY(0);
-
-  &:hover {
-    text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
-    //transform: translateY(-2px);
-  }
+::-webkit-scrollbar {
+  display: none
 }
-
-
-
-
-
-
-
-
-
-
-//---MAIN STRUCTURE---
 
 .all {
   display: grid;
-  width: 100%;
-  min-height: 100%;
-  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  //max-width: 1100px;
+  //margin: 0 auto;
+  grid-template-rows: auto auto 1fr auto;
 }
 
-
-
-.doc-header {
-  height: 90vh;
-  background-color: $red;
-  color: $white;
-
-  &>.width-max {
-    display: grid;
-    place-content: stretch;
-    grid-template-rows: auto 1fr;
-  }
+*.width1100 {
+  max-width: calc(1100px + 1rem);
+  margin: 0 auto;
+  padding: 0 .5rem;
 }
 
-.navBar {
-  margin: 2rem 0;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-content: center;
-  align-items: center;
-}
-
-.logo {
-  text-transform: uppercase;
-  font-size: 1.5rem;
+a,
+img {
   display: block;
-
-  a {
-    display: block;
-    margin-right: auto;
-    margin-left: -.7em;
-    width: fit-content;
-    padding: .7em .6em .55em;
-  }
 }
 
-.nav>ul {
-  text-transform: uppercase;
+li {
+  list-style: none;
+}
+
+/*
+main {
+  align-self: stretch;
+
+  &>section {
+    display: grid;
+    place-content: center;
+  }
+}*/
+
+.buttons {
   display: flex;
-  font-size: .75rem;
 
-  &>li>a {
-    padding: 1.4em 1.2em 1.1em;
-    display: block;
-
-    &:hover {
-      background-color: $t-light;
-    }
+  &.center {
+    justify-content: center;
   }
-}
 
-.hero {
-  display: grid;
-  place-content: center;
-
-  &>.content {
-    position: relative;
+  & .btn {
+    color: $accent;
+    font-size: .6rem;
+    text-transform: uppercase;
+    border: $accent solid 2px;
+    padding: 1.4em 2.2em 1.1em 2.2em;
     text-align: center;
+    min-width: 220px;
+    background-color: $white;
+    margin-right: 1rem;
 
-    &>.huge-letter {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: $t-dark;
-      font-size: 35rem;
-      line-height: 1;
-      transform: translate(-40%, -50%);
-      user-select: none;
-      padding-top: .2em;
-      padding-right: .15em;
-      display: block;
-      z-index: 1;
+    & i {
+      margin-right: .15rem;
     }
 
-    &>h2 {
-      z-index: 2;
-      position: relative;
+    &.dark {
+      color: $white;
+      border: $dark solid 2px;
+      background-color: $dark;
+    }
 
-      &>span {
-        display: block;
-        font-size: 2rem;
-        font-family: 'Domine', serif;
-      }
+    &.accent {
+      color: $white;
+      background-color: $accent;
     }
   }
 }
 
 
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin: 1rem 0;
 
+  &>span {
+    display: block;
+    font-size: 1.2rem;
+  }
+}
 
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 4rem;
+  color: $dark;
 
+  &::after {
+    content: '';
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    height: 2px;
+    background-color: $dark-07;
+  }
+}
 
-
-
-//---BUTTONS---
-
-
-
-
-
-
-//---CARDs---
+h3 {
+  font-size: 3rem;
+  color: $dark;
+  text-transform: uppercase;
+}

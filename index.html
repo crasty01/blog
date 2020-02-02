@@ -7,93 +7,140 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BOLG</title>
 
+  <script src="https://kit.fontawesome.com/e1d54d6e71.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/content.css">
+  <link rel="stylesheet" href="styles/footer.css">
 
   <script src="./scripts/script.js"></script>
 </head>
 
 <body>
   <div class="all">
-    <header class="doc-header">
-      <div class="width-max">
-        <nav class="navBar">
-          <h1 class="logo">
-            <a href="&">
-              <span>rebooker</span>
-            </a>
-          </h1>
-          <div class="nav">
-            <ul>
-              <li><a href="#"><span>home</span></a></li>
-              <li><a href="#"><span>recenze</span></a></li>
-              <li><a href="#"><span>ostatní</span></a></li>
-              <li><a href="#"><span>můj profil</span></a></li>
-              <li><a href="#"><span>vyhledávání</span></a></li>
-            </ul>
-          </div>
+    <div class="header">
+      <div class="width1100">
+        <div class="logo left">
+          <span>REBOOKER</span>
+        </div>
+        <nav class="nav right">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">recenze</a></li>
+            <li><a href="#">o stránce</a></li>
+            <li><a href="#">můj profil</a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+          </ul>
         </nav>
-        <div class="hero">
-          <div class="content">
-            <span class="huge-letter">R</span>
-            <h2>
-              rebooker
-              <span>recenze knih</span>
-              </h1>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="width1100">
+        <div class="big-letter">R</div>
+        <h1>
+          rebooker
+          <span>
+            - renze knih -
+          </span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="content width1100">
+      <h2>
+        poslední recenze
+        <div class="line"></div>
+      </h2>
+
+      <section class="review-example">
+        <div class="big-letter">O</div>
+        <h3>odkaz dračích jezdců: eragon</h3>
+        <div class="about">
+          autor: <span class="autor">Christopher Paolini</span> / žánr: <span class="genere">Fantasy</span> / <span
+            class="date">10. listopadu 2019</span> / <span class="rating">82 %</span>
+        </div>
+        <p class="text-example">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at risus a diam interdum in aliquam nunc
+          accumsan. Volutpat enim adipiscing faucibus nec, id at scelerisque fames. Aliquam tellus sed mattis tortor
+          dolor elit in et, sit. Vel dui lectus nisi sagittis. Dui, quam nibh fringilla ut varius cras nulla sit amet.
+          Et eget ultrices amet magna mollis dolor tortor quis sollicitudin. Urna, turpis tellus malesuada facilisis a
+          sapien rbi maecenas.
+        </p>
+        <div class="buttons">
+          <div class="btn accent">
+            číst teď
+          </div>
+          <div class="btn">
+            <i class="far fa-bookmark"></i>
+            číst později
           </div>
         </div>
-      </div>
-    </header>
-    <main class="doc-main">
-      <div class="content">
-        <h2>poslední recenze</h2>
-        <div class="list">
-          <div class="card">
-            <span class="huge-letter">O</span>
-            <h3>
-              <span class="cycle">Odkaz dračích jezdcú:</span>
-              <span class="title">Eragon</span>
-            </h3>
-            <div class="info">
-              autor: <span class="author">Christopher Paolini</span>&nbsp;&nbsp;/&nbsp;&nbsp;
-              žánr: <span class="genre">fantasy</span>&nbsp;&nbsp;/&nbsp;&nbsp;
-              <span class="date">10. listopad</span>&nbsp;&nbsp;/&nbsp;&nbsp;
-              <span class="rank">82</span>&nbsp;%
-            </div>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at risus a diam interdum in aliquam nunc
-              accumsan. Volutpat enim adipiscing faucibus nec, id at scelerisque fames. Aliquam tellus sed mattis tortor
-              dolor elit in et, sit. Vel dui lectus nisi sagittis. Dui, quam nibh fringilla ut varius cras nulla sit
-              amet. Et eget ultrices amet magna mollis dolor tortor quis sollicitudin. Urna, turpis tellus malesuada
-              facilisis a sapien rbi maecenas.
-            </p>
-            <div class="buttons">
-              <div class="btn btn--read-on">
-                číst teď
-              </div>
-              <div class="btn btn--read-later">
-                založit
-              </div>
-            </div>
+      </section>
+
+      <section class="review-example">
+        <div class="big-letter">O</div>
+        <h3>odkaz dračích jezdců: eragon</h3>
+        <div class="about">
+          autor: <span class="autor">Christopher Paolini</span> / žánr: <span class="genere">Fantasy</span> / <span
+            class="date">10. listopadu 2019</span> / <span class="rating">82 %</span>
+        </div>
+        <p class="text-example">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at risus a diam interdum in aliquam nunc
+          accumsan. Volutpat enim adipiscing faucibus nec, id at scelerisque fames. Aliquam tellus sed mattis tortor
+          dolor elit in et, sit. Vel dui lectus nisi sagittis. Dui, quam nibh fringilla ut varius cras nulla sit amet.
+          Et eget ultrices amet magna mollis dolor tortor quis sollicitudin. Urna, turpis tellus malesuada facilisis a
+          sapien rbi maecenas.
+        </p>
+        <div class="buttons">
+          <div class="btn accent">
+            číst teď
           </div>
-          <div class="buttons">
-            <div class="btn btn--load-more">
-              načíst další
-            </div>
+          <div class="btn">
+            <i class="far fa-bookmark"></i>
+            číst později
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="doc-footer">
-      <div class="content">
-        <span class="footer-title">rebooker</span>
-        <div class="footer-info">
-          <span class="footer-author">created by Daniel Vondra</span>
-          &middot
-          <span class="footer-power">powered by WordPress</span>
-          <span class="footer-rights">All rights reserved.</span>
+      </section>
+
+      <section class="review-example">
+        <div class="big-letter">O</div>
+        <h3>odkaz dračích jezdců: eragon</h3>
+        <div class="about">
+          autor: <span class="autor">Christopher Paolini</span> / žánr: <span class="genere">Fantasy</span> / <span
+            class="date">10. listopadu 2019</span> / <span class="rating">82 %</span>
+        </div>
+        <p class="text-example">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et at risus a diam interdum in aliquam nunc
+          accumsan. Volutpat enim adipiscing faucibus nec, id at scelerisque fames. Aliquam tellus sed mattis tortor
+          dolor elit in et, sit. Vel dui lectus nisi sagittis. Dui, quam nibh fringilla ut varius cras nulla sit amet.
+          Et eget ultrices amet magna mollis dolor tortor quis sollicitudin. Urna, turpis tellus malesuada facilisis a
+          sapien rbi maecenas.
+        </p>
+        <div class="buttons">
+          <div class="btn accent">
+            číst teď
+          </div>
+          <div class="btn">
+            <i class="far fa-bookmark"></i>
+            číst později
+          </div>
+        </div>
+      </section>
+      <div class="buttons center">
+        <div class="btn dark">
+          načíst více
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="footer width1100">
+      <div class="name">
+        rebooker
+      </div>
+      <span>Vytvořil: Daniel Vondra · Powered by WordPress</span>
+      <span>All rights reserved</span>
+    </div>
   </div>
 </body>
 

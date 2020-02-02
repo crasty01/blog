@@ -1,0 +1,56 @@
+@import './_colors.scss';
+
+
+.content {
+  display: grid;
+  gap: 8rem;
+}
+
+.review-example {
+  position: relative;
+  max-width: 700px;
+  z-index: 2;
+
+  &>.big-letter {
+    position: absolute;
+    user-select: none;
+    z-index: -1;
+    font-size: 16rem;
+    left: -10%;
+    top: -15%;
+    line-height: 16rem;
+    color: $dark-07;
+  }
+
+  &>.about {
+    font-family: Domine;
+    font-size: .9rem;
+    font-weight: bold;
+    color: $dark-less;
+  }
+
+  &>p.text-example {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    font-family: Domine;
+    line-height: 170%;
+    font-weight: 400;
+  }
+
+  &::after {
+    content: '';
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    height: 2px;
+    background-color: $dark-07;
+  }
+
+  &:last-of-type {
+
+    &::after {
+      content: none;
+    }
+  }
+}

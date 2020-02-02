@@ -1,0 +1,33 @@
+@import './_colors.scss';
+
+.header {
+  background-color: $accent;
+  color: $white;
+  padding: 1.6rem;
+
+  &>div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.nav {
+  text-transform: uppercase;
+  font-size: .6rem;
+  display: grid;
+  align-content: center;
+
+  &>ul {
+    display: flex;
+
+    &>li>a {
+      margin-left: 1.6rem;
+      padding: .2rem;
+    }
+  }
+}

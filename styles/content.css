@@ -1,0 +1,55 @@
+.content {
+  display: -ms-grid;
+  display: grid;
+  gap: 8rem;
+}
+
+.review-example {
+  position: relative;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.review-example > .big-letter {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: -1;
+  font-size: 16rem;
+  left: -10%;
+  top: -15%;
+  line-height: 16rem;
+  color: rgba(0, 0, 0, 0.07);
+}
+
+.review-example > .about {
+  font-family: Domine;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #444444;
+}
+
+.review-example > p.text-example {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  font-family: Domine;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.review-example::after {
+  content: '';
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 4rem;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.review-example:last-of-type::after {
+  content: none;
+}
+/*# sourceMappingURL=content.css.map */

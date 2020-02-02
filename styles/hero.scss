@@ -1,0 +1,25 @@
+@import './_colors.scss';
+
+.hero {
+  background-color: $accent;
+  color: $white;
+  height: 78vh;
+  display: grid;
+  place-content: center;
+  z-index: 2;
+
+  &>.with1100 {
+    position: relative;
+  }
+
+  & .big-letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    font-size: 35rem;
+    color: $dark-07;
+    z-index: -1;
+    user-select: none;
+  }
+}

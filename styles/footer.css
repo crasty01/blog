@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer .name {
+  font-size: 1.6rem;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.footer span {
+  font-size: 1rem;
+  display: block;
+}
+/*# sourceMappingURL=footer.css.map */
