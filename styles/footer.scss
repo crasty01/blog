@@ -13,8 +13,12 @@
     margin-bottom: .5rem;
   }
 
-  & span {
+  &>span {
     font-size: 1rem;
     display: block;
+
+    &>a {
+      display: inline;
+    }
   }
 }

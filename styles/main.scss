@@ -76,12 +76,14 @@ main {
 
   & .btn {
     color: $accent;
-    font-size: .6rem;
+    font-size: .8rem;
     text-transform: uppercase;
     border: $accent solid 2px;
-    padding: 1.4em 2.2em 1.1em 2.2em;
+    padding: 0 2.2em 0 2.2em;
+    line-height: 3.4em;
+    height: 3.4em;
     text-align: center;
-    min-width: 220px;
+    min-width: 200px;
     background-color: $white;
     margin-right: 1rem;
 

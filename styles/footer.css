@@ -12,8 +12,12 @@
   margin-bottom: .5rem;
 }
 
-.footer span {
+.footer > span {
   font-size: 1rem;
   display: block;
+}
+
+.footer > span > a {
+  display: inline;
 }
 /*# sourceMappingURL=footer.css.map */

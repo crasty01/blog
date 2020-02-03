@@ -48,7 +48,8 @@
   }
 
   &:last-of-type {
-
+    margin-bottom: -3rem;
+    
     &::after {
       content: none;
     }
